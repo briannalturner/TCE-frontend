@@ -107,13 +107,18 @@
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
-  margin-right: 0px;
+  margin: 0px;
 }
 
 .container-fluid::after, .row::after {
   content: "";
   clear: both;
   display: table;
+}
+
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .title {
