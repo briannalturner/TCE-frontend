@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import Navbar from './components/Navbar'
+import HomePage from './components/HomePage';
+import About from './components/About'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Photos from './components/Photos'
+import Careers from './components/Careers'
+import Reviews from './components/Reviews'
+import Blank from './components/Blank'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+
+
+
+  render() {
+    return (
+      <div className="App container">
+        <Navbar />
+        <Blank />
+        <Switch>
+          <Route exact path="/about" render={() => <About/> } />
+          <Route exact path="/contact" render={() => <Contact/> } />
+          <Route exact path="/photos" render={() => <Photos/> } />
+          <Route exact path="/careers" render={() => <Careers/> } />
+          <Route exact path="/reviews" render={() => <Reviews/> } />
+          <Route exact path="/" render={() => <HomePage/> } />
+        </Switch>
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
