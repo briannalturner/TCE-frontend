@@ -18,7 +18,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App container">
+      <div className="App container-fluid">
         <Navbar />
         <Blank />
         <Switch>

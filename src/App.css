@@ -51,7 +51,7 @@
 }
 
 .jumbotron {
-  min-height: 80vh;
+  min-height: 60vh;
 }
 
 .card-grow {
@@ -104,11 +104,13 @@
   color: white;
 }
 
-.container {
-  padding: 0 16px;
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
 }
 
-.container::after, .row::after {
+.container-fluid::after, .row::after {
   content: "";
   clear: both;
   display: table;
