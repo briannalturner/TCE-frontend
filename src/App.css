@@ -55,10 +55,14 @@
 }
 
 .card-grow {
-  transition: all 350ms;
+  transition: all 300ms;
 }
 .card-grow:hover {
   transform: scale(1.02);
+  background-color: #E9ECEF;
+  color: #0069D9;
+  border: #0069D9;
+  border-width: 2px;
 }
 
 .blp-background {
@@ -69,16 +73,33 @@
   color: white;
 }
 
+.d-block{
+  line-height: 5px;
+}
+
 .blank {
   min-height: 56px;
 }
 
 .blue-background {
-  background-color: rgb(158, 200, 255);
+  background-color: #0069D9;
+}
+
+.footer{
+  background-color: #626466;
 }
 
 .white-text {
   color: white;
+}
+
+.footer-text{
+  color: white
+}
+
+.active-footer-text{
+  color: white;
+  text-decoration: none;
 }
 
 *, *:before, *:after {
