@@ -10,6 +10,7 @@ import Photos from './components/Photos'
 import Careers from './components/Careers'
 import Reviews from './components/Reviews'
 import Blank from './components/Blank'
+import './custom.scss'
 
 
 class App extends React.Component {

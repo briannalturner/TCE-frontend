@@ -6,10 +6,10 @@ class HomePage extends React.Component {
     render() {
         return (
             <div>
-                <div className='jumbotron jumbotron-fluid px-5'>
+                <div className='jumbotron jumbotron-fluid px-5 mb-2 birch-background'>
                     <h1 className='display-2 text-left'>Let Us Make Your Dreams Concrete.</h1>
                     <br></br>
-                    <p className='lead text-left'>Call us at (540)742-3180 for a free consultation.</p>
+                    <p className='lead text-left'>Call us at (540) 742-3180 for a free consultation.</p>
                     <p className="text-left">At Turner Concrete & Excavating we strive to deliver a quality product each and every day, and our team will do their utmost to ensure your satisfaction. We have provided our services throughout the Shenandoah Valley and we are proud to be family owned and operated.</p>
                     <br></br>
                     <Link to="/photos" className='btn btn-lg btn-primary float-left'>View Our Past Work</Link>
