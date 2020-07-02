@@ -66,8 +66,8 @@ html{
 .card-grow:hover {
   transform: scale(1.02);
   background-color: #E9ECEF;
-  color: #0069D9;
-  border: #0069D9;
+  color: #436962;
+  border: #436962;
   border-width: 2px;
 }
 
@@ -103,7 +103,7 @@ html{
 }
 
 .blue-background {
-  background-color: #0069D9;
+  background-color: #436962;
 }
 
 .footer{
