@@ -16,8 +16,8 @@ class Contact extends React.Component {
                 <div className="blp-background p-3">
                     <h1 className="text-left">Contact Us</h1>
                 </div>
-                <form className="m-4">
-                    <p className="text-left">Make sure to include your email or phone number and we'll get back to you as soon as possible.</p>
+                <form className="m-5">
+                    <p className="text-left">Make sure to include your <strong>email</strong> or <strong>phone number</strong> and we'll get back to you as soon as possible.</p>
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="inputEmail4">Name</label>
