@@ -82,6 +82,16 @@ html{
   margin: 0px;
 }
 
+.careers-background {
+  resize: both;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./pictures/careers2.JPG') center center no-repeat;
+  background-size: 100%;
+  color: white;
+  margin: 0px;
+}
+
 .birch-background {
   max-width: 100%;
   height: 100%;
@@ -94,6 +104,10 @@ html{
 .form-group{
   margin-left: 0px;
   margin-right: 0px;
+}
+
+.career2{
+  max-width: inherit;
 }
 
 .d-block{
