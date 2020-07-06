@@ -10,8 +10,31 @@ class Careers extends React.Component {
         super()
 
         this.state = {
-            picArray: ['../pictures/career2.JPG', {career3}, {career4}]
+            currentPic: 'career2'
         }
+    }
+
+    grabPic = () => {
+        return career2
+    }
+
+    next = () => {
+
+        if (this.state.currentPic === 'career2') {
+            this.setState({currentPic: 'career3'})
+            console.log(document.getElementById('picId'))
+            // document.getElementById('picId').src = career3
+            return null
+        } else if (this.state.currentPic === 'career3') {
+            this.setState({currentPic: 'career4'})
+            // document.getElementById('picId').src = career4
+            return null
+        } else {
+            this.setState({currentPic: 'career2'})
+            // document.getElementById('picId').src = career2
+            return null
+        }
+        
     }
 
     render() {
@@ -32,8 +55,8 @@ class Careers extends React.Component {
                         <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                         </svg>
-                        <img className="career2 rounded float-center" src={this.state.picArray[0]} alt="" />
-                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <img className="career2 rounded float-center" id='picId' src={this.grabPic()} alt="" />
+                        <svg onClick={this.next()} width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
                     </div>
