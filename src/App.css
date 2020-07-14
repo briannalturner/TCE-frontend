@@ -102,6 +102,16 @@ html{
   margin: 0px;
 }
 
+.about-background {
+  resize: both;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('./pictures/family.jpeg') center center no-repeat;
+  background-size: 100%;
+  color: white;
+  margin: 0px;
+}
+
 .triangle-border {
   position:relative;
   padding: 7%;
