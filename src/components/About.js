@@ -18,36 +18,73 @@ class About extends React.Component {
 
                     <div class="row" style={{width: '100%'}}>
                         <div class="col-4 float-left">
-                            <div class="card clickable">
-                                <img src={Ronnie} alt="Mike" className="card-img-top" style={{height: '250px', objectFit: 'cover'}}/>
-                                <div class="card-body">
-                                    <h2>Ronnie Turner</h2>
-                                    <p class="title">Founder</p>
+                            <div className='card-flip'>
+                                <div className='flip'>
+                                    <div class="front">
+                                        <div className='card'>
+                                            <img src={Ronnie} alt="Mike" className="card-img-top" style={{height: '250px', objectFit: 'cover'}}/>
+                                            <div class="card-body">
+                                                <h2>Ronnie Turner</h2>
+                                                <p class="title">Founder</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='back'>
+                                        <div className='card p-5'>
+                                            <p>Ronnie began Turner Concrete & Excavating in 1997, around the time his first son, Jonathan, was born.</p>
+                                            <p>Nowadays Ronnie can be found helping out around the job site and hanging out with his granddaughter, Kinsley.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-4 float-center">
-                            <div class="card clickable">
-                                <img src={Jonny} alt="John" className="card-img-top" style={{height: '250px', objectFit: 'cover'}}/>
-                                <div class="card-body">
-                                    <h2>Jon Turner</h2>
-                                    <p class="title">CEO</p>
+                        <div className='card-flip'>
+                                <div className='flip'>
+                                    <div class="front">
+                                        <div className='card'>
+                                            <img src={Jonny} alt="Mike" className="card-img-top" style={{height: '250px', objectFit: 'cover'}}/>
+                                            <div class="card-body">
+                                                <h2>Jon Turner</h2>
+                                                <p class="title">CEO</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='back'>
+                                        <div className='card p-5'>
+                                            <p>Ronnie began Turner Concrete & Excavating in 1997, around the time his first son, Jonathan, was born.</p>
+                                            <p>Nowadays Ronnie can be found helping out around the job site and hanging out with his granddaughter, Kinsley.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                             <div class="col-4 float-right">
-                                <div class="card clickable">
-                                <img src={Carol} alt="Jane" className="card-img-top" style={{height: '250px', objectFit: 'cover'}}/>
-                                <div class="card-body">
-                                    <h2>Carol Turner</h2>
-                                    <p class="title">CFO</p>
+                                <div className='card-flip'>
+                                    <div className='flip'>
+                                        <div class="front">
+                                            <div className='card'>
+                                                <img src={Carol} alt="Mike" className="card-img-top" style={{height: '250px', objectFit: 'cover'}}/>
+                                                <div class="card-body">
+                                                    <h2>Carol Turner</h2>
+                                                    <p class="title">CFO</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='back'>
+                                            <div className='card p-5'>
+                                                <p>Ronnie began Turner Concrete & Excavating in 1997, around the time his first son, Jonathan, was born.</p>
+                                                <p>Nowadays Ronnie can be found helping out around the job site and hanging out with his granddaughter, Kinsley.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            // </div>
         )
     }
 }

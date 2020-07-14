@@ -1,7 +1,7 @@
 import React from 'react'
 import career2 from '../pictures/career2.JPG'
-import career3 from '../pictures/career3.JPG'
-import career4 from '../pictures/career4.JPG'
+// import career3 from '../pictures/career3.JPG'
+// import career4 from '../pictures/career4.JPG'
 
 
 class Careers extends React.Component {
