@@ -104,9 +104,9 @@ html{
 
 .triangle-border {
   position:relative;
-  padding:15px;
+  padding: 7%;
   margin:1em 0 3em;
-  border:5px solid #5a8f00;
+  border:5px solid #192700;
   color:#333;
   background:#fff;
   /* css3 */
@@ -130,7 +130,7 @@ html{
   left:40px; /* controls horizontal position */
   border-width:20px 20px 0;
   border-style:solid;
-  border-color:#5a8f00 transparent;
+  border-color:#192700 transparent;
   /* reduce the damage in FF3.0 */
   display:block;
   width:0;
@@ -180,7 +180,7 @@ html{
   bottom:auto;
   left:-30px; /* value = - border-left-width - border-right-width */
   border-width:15px 30px 15px 0;
-  border-color:transparent #5a8f00;
+  border-color:transparent #192700;
 }
 
 /* creates the smaller  triangle */
@@ -202,7 +202,7 @@ html{
   left:auto;
   right:-30px; /* value = - border-left-width - border-right-width */
   border-width:15px 0 15px 30px;
-  border-color:transparent #5a8f00;
+  border-color:transparent #192700;
 }
 
 /* creates the smaller  triangle */
@@ -283,6 +283,14 @@ html{
   text-align: center;
   background-color: #383838;
   color: white;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .container-fluid {
