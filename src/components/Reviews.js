@@ -19,11 +19,11 @@ class Reviews extends React.Component {
 
                             </div>
                             <div className="row">
-                                <div className="col">
+                                <div className="col-8">
                                     <p class="triangle-border right">"We've depended on Turner Concrete & Excavating for years, and they have not yet let us down. Every time we need a project completed swiftly and professionally we call Turner Concrete." - Town of Luray, VA</p>
                                 </div>
-                                <div className="col">
-                                    <img src={career2} />
+                                <div className="col-4">
+                                    <img style={{width: 'inherit'}} src={career2} />
                                 </div>
                             </div>
                         </div>
