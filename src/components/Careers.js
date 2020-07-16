@@ -1,7 +1,7 @@
 import React from 'react'
 import career2 from '../pictures/career2.JPG'
 // import career3 from '../pictures/career3.JPG'
-// import career4 from '../pictures/career4.JPG'
+import career4 from '../pictures/career4.JPG'
 
 
 class Careers extends React.Component {
@@ -52,13 +52,25 @@ class Careers extends React.Component {
                         <div className='mb-3'>If you think you’ve got what it takes to be an integral part of our internal community and succeed in a results-driven and fun environment, we’d love to hear from you.</div>
                     </div>
                     <div className='col-8 carousel'>
-                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        {/* <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                        </svg>
+                        </svg> */}
                         <img className="career2 rounded float-center" id='picId' src={this.grabPic()} alt="" />
-                        <svg onClick={this.next()} width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        {/* <svg onClick={this.next} width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
+                        </svg> */}
+                    </div>
+                </div>
+                <div>
+                    <div className='row float-middle m-1'>
+                        <div className='col-8'>
+                            <img className='career2 rounded float-center' src={career4}/>
+                        </div>
+                        <div className='col-4 text-left p-3'>
+                            We're always hiring dependable workers, whether you have experience with concrete or not.
+                            If you think you'd be interested in joining the Turner Concrete family, shoot
+                            a quick text to (540) 742-3180 to get started!
+                        </div>
                     </div>
                 </div>
             </div>

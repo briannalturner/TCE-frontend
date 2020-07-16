@@ -5,7 +5,12 @@ class Contact extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { phone: '', name: '', email: '', message: '' };
+        this.state = { 
+            phone: '', 
+            name: '', 
+            email: '', 
+            message: '' 
+        };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -50,17 +55,19 @@ class Contact extends React.Component {
     
     handleSubmit (event) {
         event.preventDefault()
-        if (this.state.phone === '' && this.state.email === '') {
-            swal('Could Not Submit Message','Please provide a valid phone or email.', 'error')
-        } else if (this.state.name === '') {
-            swal('Could Not Submit Message', 'Please provide a name.', 'error')
-        } else if (this.state.message === '') {
-            swal('Could Not Submit Message', 'Please enter a message.', 'error')
-        } else {
-            const templateId = 'template_JO7ydMzw';
-            this.sendFeedback(templateId, {message_html: this.state.message, from_name: this.state.name, reply_to: this.state.email, from_phone: this.state.phone})
-            this.setState({ phone: '', name: '', email: '', message: '' })
-        }
+
+        const templateId = 'template_JO7ydMzw';
+        this.sendFeedback(templateId, {
+            message_html: this.state.message, 
+            from_name: this.state.name, 
+            reply_to: this.state.email, 
+            from_phone: this.state.phone})
+        this.setState({ 
+            phone: '', 
+            name: '', 
+            email: '', 
+            message: '' })
+
     }
     
     sendFeedback (templateId, variables) {
@@ -70,8 +77,7 @@ class Contact extends React.Component {
             ).then(res => {
             swal('Your Message Has Been Sent!', 'We\'ll get back to you as soon as possible.', 'success')
             })
-            // Handle errors here however you like, or use a React error boundary
-            .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err)
+            .catch(err => console.error('Error:', err)
         )
     }
 }
