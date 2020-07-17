@@ -29,9 +29,11 @@ class Reviews extends React.Component {
                                 </div>
                                 <div className="col-5 review">
                                     <div className='vertical-center p-4'>
-
+                                        <h3 className='text-left'>
+                                        "I loved my experience working with Turner Concrete & Excavating, the entire process was seamless from start to finish. If you need a professional, dependable concrete company look no further."
+                                        </h3>
+                                        <p className='text-right'>- Jane Doe, Shenandoah, VA</p>
                                     </div>
-                                    <p class="vertical-center mr-3 rounded p-2">"I loved my experience working with Turner Concrete & Excavating, the entire process was seamless from start to finish. If you need a professional, dependable concrete company look no further." - Jane Doe, Shenandoah, VA</p>
                                 </div>
                             </div>
                             <div className='m-5 text-left'>
