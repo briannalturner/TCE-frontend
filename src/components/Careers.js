@@ -64,7 +64,7 @@ class Careers extends React.Component {
                 <div>
                     <div className='row float-middle m-1'>
                         <div className='col-8'>
-                            <img className='career2 rounded float-center' src={career4}/>
+                            <img className='career2 rounded float-center' alt='' src={career4}/>
                         </div>
                         <div className='col-4 text-left p-3'>
                             We're always hiring dependable workers, whether you have experience with concrete or not.

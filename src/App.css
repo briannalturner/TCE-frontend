@@ -281,6 +281,17 @@ html{
   transform: rotateY(180deg);
 }
 
+.review{
+  background-color: #383838;
+  color: #E9ECEF;
+}
+
+.review-image{
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+
 .card-flip,
 .front,
 .back {
