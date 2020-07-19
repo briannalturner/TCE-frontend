@@ -2,7 +2,7 @@ import React from 'react'
 import Carol from '../pictures/carol.jpg'
 import Ronnie from '../pictures/ronnie.jpg'
 import Jonny from '../pictures/jonny.jpg'
-import Review from '../pictures/review-main.JPG'
+import Review from '../pictures/new-review.JPG'
 
 
 class About extends React.Component {
@@ -14,7 +14,7 @@ class About extends React.Component {
                     <h1 className='display-2 text-center'>Family Owned And Operated Since 1997</h1>
                     <p className='lead'>We've been serving the Shenandoah Valley for over 20 years and we're excited to help you take your private or professional project to the next level.</p>
                 </div>
-                <div className='row'>
+                <div className='row mt-4'>
                     <div className='col-6'>
                         <h1><strong>Our Story</strong></h1>
                         <hr></hr>
@@ -23,7 +23,7 @@ class About extends React.Component {
                         <p className='text-left'>Marc contacted another former classmate and computer whiz, Dave Christensen. Marc spent long hours on his green couch (a hand-me-down from his big brother) talking to Dave on the phone and planning the business, and figuring out ways to make designing and buying custom t-shirts fun, easy, and reliable. In March 2000, Custom Ink was officially launched with a small team of “Inkers” running the show - all from different backgrounds - but with big hearts.</p>
                     </div>
                     <div className='col-6'>
-                        <img alt='' className='vertical-align' style={{width: 'inherit'}} src={Review} />
+                        <img alt='' className='rounded' style={{width: 'inherit', maxHeight:'520px', objectFit:'cover'}} src={Review} />
                     </div>
                 </div>
                 <div className='m-1 p-1'>
