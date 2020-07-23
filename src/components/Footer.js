@@ -1,5 +1,5 @@
 import React from 'react'
-import SmallBusinessLogo from '../pictures/sba.png'
+import Logo from '../pictures/TCE3.png'
 import {Link} from 'react-router-dom'
 
 class Footer extends React.Component {
@@ -9,7 +9,7 @@ class Footer extends React.Component {
             <footer class='footer white-text p-2' style={{width: "100%"}}>
                 <div class='row'>
                     <div class='col'>
-                        <img src={SmallBusinessLogo} className="" style={{maxHeight: "100px"}} alt="small business logo" />
+                        <img src={Logo} className="" style={{maxHeight: "100px"}} alt="small business logo" />
                     </div>
                     <div class='col'>
                         <p class=''><small>At Turner Concrete & Excavating we strive to deliver a quality product each and every day. We have provided our services throughout the Shenandoah Valley and we are proud to be family owned and operated.</small></p>

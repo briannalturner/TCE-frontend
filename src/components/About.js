@@ -15,19 +15,20 @@ class About extends React.Component {
                     <p className='lead'>We've been serving the Shenandoah Valley for over 20 years and we're excited to help you take your private or professional project to the next level.</p>
                 </div>
                 <div className='row mt-4 mx-4'>
-                    <div className='col-6'>
+                    <div className='col-8'>
                         <h1><strong>Our Story</strong></h1>
                         <hr></hr>
                         <p className='text-left'>The Custom Ink story began in 1999 when three former college classmates got the bug to start a business about a year after graduating. Co-founder and CEO Marc Katz was hard at work in a Wall Street job that he says “didn’t have a lot of heart” and was itching to do something entrepreneurial and meaningful.</p>
                         <p className='text-left'>Meanwhile, Marc’s former college roommate Mike Driscoll was tinkering with the earliest iteration of the customink.com website, which would let people upload graphics onto t-shirts and buy them as special keepsakes. Though Mike was returning to grad school, he had a handful of eager customers, and talked with Marc about launching the “design online” website into a legitimate business.</p>
                         <p className='text-left'>Marc contacted another former classmate and computer whiz, Dave Christensen. Marc spent long hours on his green couch (a hand-me-down from his big brother) talking to Dave on the phone and planning the business, and figuring out ways to make designing and buying custom t-shirts fun, easy, and reliable. In March 2000, Custom Ink was officially launched with a small team of “Inkers” running the show - all from different backgrounds - but with big hearts.</p>
                     </div>
-                    <div className='col-6'>
-                        <img alt='' className='rounded img-fluid' style={{width: 'auto', maxHeight:'520px', objectFit:'cover'}} src={Review} />
+                    <div className='col-4'>
+                        <img alt='' className='rounded img-fluid img-responsive' style={{width: 'inherit', maxHeight:'480px'}} src={Review} />
                     </div>
                 </div>
                 <div className='m-1 p-1'>
-                    <h1 className=''>Meet Our Team</h1>
+                    <br></br>
+                    <h1 className=''><strong>Meet Our Team</strong></h1>
 
                     <div class="row" style={{width: '100%'}}>
                         <div class="col-4 float-left">
