@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../pictures/TCE3.png'
 import {Link} from 'react-router-dom'
+import FacebookLogo from '../pictures/fb_logo.png'
 
 class Footer extends React.Component {
 
@@ -12,7 +13,7 @@ class Footer extends React.Component {
                         <img src={Logo} className="" style={{maxHeight: "100px"}} alt="small business logo" />
                     </div>
                     <div class='col'>
-                        <p class=''><small>At Turner Concrete & Excavating we strive to deliver a quality product each and every day. We have provided our services throughout the Shenandoah Valley and we are proud to be family owned and operated.</small></p>
+                        <img style={{width:'20%'}} alt='' onClick={() => window.location='https://www.facebook.com/turnerconcreteandexcavating/'}  className='vertical-center clickable' src={FacebookLogo} />
                     </div>
                     <div class='col p-2'>
                         <p class='d-block'><small><Link activeClassName="active" className="footer-text" to='/about'>About Us</Link></small></p>

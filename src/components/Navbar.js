@@ -1,13 +1,13 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import logo from '../pictures/TCE.png'
+import logo from '../pictures/TCE3.png'
 
 class Navbar extends React.Component {
 
     render() {
         return (
             <div>
-                <nav class='navbar fixed-top navbar-expand-md navbar-light bg-light'>
+                <nav class='navbar fixed-top navbar-expand-md navbar-dark' style={{backgroundColor:'#212427'}}>
                     <div class='container'>
                         <img src={logo} width="8%" className="mr-4" alt="" loading="lazy" />
                         {/* <div class='navbar-brand' href='#'>Turner Concrete</div> */}
