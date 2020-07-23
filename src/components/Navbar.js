@@ -9,7 +9,7 @@ class Navbar extends React.Component {
             <div>
                 <nav class='navbar fixed-top navbar-expand-md navbar-dark' style={{backgroundColor:'#212427'}}>
                     <div class='container'>
-                        <img src={logo} width="8%" className="mr-4" alt="" loading="lazy" />
+                        <img src={logo} width="9.5%" className="mr-4" alt="" loading="lazy" />
                         {/* <div class='navbar-brand' href='#'>Turner Concrete</div> */}
                         <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
                         <span class='navbar-toggler-icon'></span>
