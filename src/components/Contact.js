@@ -18,7 +18,7 @@ class Contact extends React.Component {
     render() {
         return (
             <div>
-                <div className="blp-background p-3">
+                <div className="blp-background pt-5 p-3">
                     <h1 className="text-left">Contact Us</h1>
                 </div>
                 <form className="m-5">
