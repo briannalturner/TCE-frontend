@@ -56,17 +56,33 @@ class Contact extends React.Component {
     handleSubmit (event) {
         event.preventDefault()
 
-        const templateId = 'template_JO7ydMzw';
-        this.sendFeedback(templateId, {
-            message_html: this.state.message, 
-            from_name: this.state.name, 
-            reply_to: this.state.email, 
-            from_phone: this.state.phone})
-        this.setState({ 
-            phone: '', 
-            name: '', 
-            email: '', 
-            message: '' })
+        if(this.state.message !== '' && this.state.name !== '' && this.state.email !== '') {
+            const templateId = 'template_JO7ydMzw';
+            this.sendFeedback(templateId, {
+                message_html: this.state.message, 
+                from_name: this.state.name, 
+                reply_to: this.state.email, 
+                from_phone: this.state.phone})
+            this.setState({ 
+                phone: '', 
+                name: '', 
+                email: '', 
+                message: '' })
+        } else if (this.state.message !== '' && this.state.name !== '' && this.state.phone !== '') {
+            const templateId = 'template_JO7ydMzw';
+            this.sendFeedback(templateId, {
+                message_html: this.state.message, 
+                from_name: this.state.name, 
+                reply_to: this.state.email, 
+                from_phone: this.state.phone})
+            this.setState({ 
+                phone: '', 
+                name: '', 
+                email: '', 
+                message: '' })
+        } else {
+            swal('Error', 'Please Fill Out Required Fields', 'error')
+        }
 
     }
     

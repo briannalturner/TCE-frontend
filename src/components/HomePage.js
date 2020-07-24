@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import Greenway from '../pictures/greenway2.jpg'
-import Pic2 from '../pictures/reviews.jpeg'
+// import Pic2 from '../pictures/reviews.jpeg'
 
 class HomePage extends React.Component {
 
@@ -21,11 +21,7 @@ class HomePage extends React.Component {
                 </div>
                 <div className='row px-5 text-left'>
                     <div className='col-4'>
-                        <img alt='' className='rounded border vertical-center greenway' id='greenway' style={{width:'inherit'}} onMouseOver={() => {
-                            document.getElementById('greenway').src = {Pic2}
-                        }} onDoubleClick={() => {
-                            document.getElementById('greenway').src = {Greenway}
-                        }} src={Greenway}/>
+                        <img alt='' className='rounded border vertical-center greenway' id='greenway' src={Greenway} style={{width:'inherit'}} />
                     </div>
                     <div className='col ml-4'>
                         <h2>Why Choose Concrete?</h2>

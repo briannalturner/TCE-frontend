@@ -1,40 +1,21 @@
 import React from 'react'
 import career2 from '../pictures/career2.JPG'
-// import career3 from '../pictures/career3.JPG'
-import career4 from '../pictures/career4.JPG'
-
+import swal from 'sweetalert'
 
 class Careers extends React.Component {
 
     constructor() {
         super()
-
         this.state = {
-            currentPic: 'career2'
+            firstName: '',
+            lastName: '',
+            email: '',
+            phone: '',
+            experience: '',
+            position: ''
         }
-    }
-
-    grabPic = () => {
-        return career2
-    }
-
-    next = () => {
-
-        if (this.state.currentPic === 'career2') {
-            this.setState({currentPic: 'career3'})
-            console.log(document.getElementById('picId'))
-            // document.getElementById('picId').src = career3
-            return null
-        } else if (this.state.currentPic === 'career3') {
-            this.setState({currentPic: 'career4'})
-            // document.getElementById('picId').src = career4
-            return null
-        } else {
-            this.setState({currentPic: 'career2'})
-            // document.getElementById('picId').src = career2
-            return null
-        }
-        
+        // this.onChange = this.onChange.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     render() {
@@ -51,29 +32,90 @@ class Careers extends React.Component {
                         <div className='mb-3'>We're always looking for friendly and highly motivated potential Inkers who are ready to roll up their sleeves and work with a great team.</div>
                         <div className='mb-3'>If you think you’ve got what it takes to be an integral part of our internal community and succeed in a results-driven and fun environment, we’d love to hear from you.</div>
                     </div>
-                    <div className='col-8 carousel'>
-                        {/* <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                        </svg> */}
-                        <img className="career2 rounded float-center" id='picId' src={this.grabPic()} alt="" />
-                        {/* <svg onClick={this.next} width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                        </svg> */}
+                    <div className='col-8'>
+                        <img className="rounded" style={{width:'inherit', height:'450px', objectFit:'cover'}} id='picId' src={career2} alt="" />
                     </div>
                 </div>
-                <div>
-                    <div className='row float-middle m-1'>
-                        <div className='col-8'>
-                            <img className='career2 rounded float-center' alt='' src={career4}/>
+                <hr></hr>
+                <div className='m-5'>
+                    <h1>Ready To Apply?</h1>
+                    <p className='lead'>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Choose from our available positions:</label>
+                            <select class="form-control" id="exampleFormControlSelect1" name="position" value={this.state.position} onChange={(e) => this.onChange(e)} >
+                                <option>Select a position...</option>
+                                <option>Concrete Finisher</option>
+                            </select>
                         </div>
-                        <div className='col-4 text-left p-3'>
-                            We're always hiring dependable workers, whether you have experience with concrete or not.
-                            If you think you'd be interested in joining the Turner Concrete family, shoot
-                            a quick text to (540) 742-3180 to get started!
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name" name="firstName" value={this.state.firstName} onChange={(e) => this.onChange(e)}/>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" name="lastName" value={this.state.lastName} onChange={(e) => this.onChange(e)} />
+                            </div>
                         </div>
-                    </div>
+                        <br></br>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Phone Number" name="phone" value={this.state.phone} onChange={(e) => this.onChange(e)}/>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Email" name="email" value={this.state.email} onChange={(e) => this.onChange(e)}/>
+                            </div>
+                        </div>
+                        <br></br>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="experience" value={this.state.experience} placeholder='Please describe relevant experience (1-3 sentences).'  onChange={(e) => this.onChange(e)}></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block" onClick={this.handleSubmit}>Submit Application</button>
+                    </form>
                 </div>
             </div>
+        )
+    }
+
+    onChange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+    
+    handleSubmit = (event) => {
+        event.preventDefault()
+        let fullName = this.state.firstName + ' ' + this.state.lastName
+
+        if(this.state.position !== '' && this.state.position !== 'Select a position...' && this.state.firstName !== '' && this.state.lastName !== '' && this.state.email !== '' && this.state.phone !== '' && this.state.experience !== '') {
+            const templateId = 'application';
+            this.sendFeedback(templateId, {
+                position: this.state.position, 
+                from_name: fullName, 
+                email: this.state.email, 
+                phone: this.state.phone,
+                experience: this.state.experience
+            })
+            this.setState({ 
+                firstName: '', 
+                lastName: '', 
+                phone: '', 
+                email: '',
+                experience: '',
+                position: ''
+            })
+        } else {
+            swal('','Please fill out each field.', 'error')
+        }
+    }
+    
+    sendFeedback (templateId, variables) {
+        window.emailjs.send(
+            'gmail', templateId,
+            variables
+            ).then(res => {
+            swal('Your Application Has Been Received!', 'We\'ll get back to you as soon as possible.', 'success')
+            })
+            .catch(err => console.error('Error:', err)
         )
     }
 }

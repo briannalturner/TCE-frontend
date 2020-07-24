@@ -10,7 +10,7 @@ class Footer extends React.Component {
             <footer class='footer white-text p-2' style={{width: "100%"}}>
                 <div class='row'>
                     <div class='col'>
-                        <img src={Logo} className="" style={{maxHeight: "100px"}} alt="small business logo" />
+                        <img src={Logo} className="float-center" style={{maxHeight: "100px"}} alt="small business logo" />
                     </div>
                     <div class='col'>
                         <img style={{width:'20%'}} alt='' onClick={() => window.location='https://www.facebook.com/turnerconcreteandexcavating/'}  className='vertical-center clickable' src={FacebookLogo} />
