@@ -10,7 +10,9 @@ import Photos from './components/Photos'
 import Careers from './components/Careers'
 import Reviews from './components/Reviews'
 import Blank from './components/Blank'
+import Careers1 from './pictures/career2.JPG'
 import './custom.scss'
+import 'react-image-lightbox/style.css'; 
 
 
 class App extends React.Component {
@@ -28,6 +30,7 @@ class App extends React.Component {
           <Route exact path="/photos" render={() => <Photos/> } />
           <Route exact path="/careers" render={() => <Careers/> } />
           <Route exact path="/reviews" render={() => <Reviews/> } />
+          <Route exact path="/cat" render={() => <Careers1/> } />
           <Route exact path="/" render={() => <HomePage/> } />
         </Switch>
         <Footer />
