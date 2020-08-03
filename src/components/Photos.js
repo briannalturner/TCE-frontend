@@ -40,19 +40,19 @@ class Photos extends React.Component {
                 <h1 className='text-middle mt-4'>Photos</h1>
                 <div className='row'>
                     <div className='col'>
-                        <img src={career2} onClick={() => this.setState({ isOpen: true, photoIndex:0 })} alt='' className='border mb-3 rounded clickable' style={{maxHeight: 'inherit', width:'inherit', objectFit:'cover'}}/>
-                        <img src={parking} onClick={() => this.setState({ isOpen: true, photoIndex:3 })} alt='' className='border my-3 rounded clickable' style={{maxHeight: 'inherit', width:'inherit', objectFit:'cover'}}/>
-                        <img src={excavating} onClick={() => this.setState({ isOpen: true, photoIndex:6 })} alt='' className='border my-3 rounded clickable' style={{maxHeight: 'inherit', width:'inherit', objectFit:'cover'}}/>
+                        <img src={career2} onClick={() => this.setState({ isOpen: true, photoIndex:0 })} alt='' className='border mb-3 rounded img-preview clickable img-fluid img-thumbnail' style={{height: '300px', width:'inherit', objectFit:'cover'}}/>
+                        <img src={parking} onClick={() => this.setState({ isOpen: true, photoIndex:3 })} alt='' className='border my-3 rounded img-preview clickable img-fluid img-thumbnail' style={{height: '300px', width:'inherit', objectFit:'cover'}}/>
+                        <img src={excavating} onClick={() => this.setState({ isOpen: true, photoIndex:6 })} alt='' className='border my-3 rounded img-preview clickable img-fluid img-thumbnail' style={{height: '300px', width:'inherit', objectFit:'cover'}}/>
                     </div>
                     <div className='col'>
-                        <img src={brush_sidewalk} onClick={() => this.setState({ isOpen: true, photoIndex:1 })} alt='' className='border mb-3 rounded clickable' style={{maxHeight: 'inherit', width:'inherit', objectFit:'cover'}}/>
-                        <img src={porch} onClick={() => this.setState({ isOpen: true, photoIndex:4 })} alt='' className='border my-3 rounded clickable' style={{maxHeight: 'inherit', width:'inherit', objectFit:'cover'}}/>
-                        <img src={walkway} onClick={() => this.setState({ isOpen: true, photoIndex:7 })} alt='' className='border my-3 rounded clickable' style={{maxHeight: 'inherit', width:'inherit', objectFit:'cover'}}/>
+                        <img src={brush_sidewalk} onClick={() => this.setState({ isOpen: true, photoIndex:1 })} alt='' className='border mb-3 rounded img-preview clickable img-fluid img-thumbnail' style={{height: '300px', width:'inherit', objectFit:'cover'}}/>
+                        <img src={porch} onClick={() => this.setState({ isOpen: true, photoIndex:4 })} alt='' className='border my-3 rounded img-preview clickable img-fluid img-thumbnail' style={{height: '300px', width:'inherit', objectFit:'cover'}}/>
+                        <img src={walkway} onClick={() => this.setState({ isOpen: true, photoIndex:7 })} alt='' className='border my-3 rounded img-preview clickable img-fluid img-thumbnail' style={{height: '300px', width:'inherit', objectFit:'cover'}}/>
                     </div>
                     <div className='col'>
-                        <img src={curved_sidewalk} onClick={() => this.setState({ isOpen: true, photoIndex:2 })} alt='' className='border mb-3 rounded clickable' style={{maxHeight: 'inherit', width:'inherit', objectFit:'cover'}}/>
-                        <img src={pool} onClick={() => this.setState({ isOpen: true, photoIndex:5 })} alt='' className='border my-3 rounded clickable' style={{maxHeight: 'inherit', width:'inherit', objectFit:'cover'}}/>
-                        <img src={street} onClick={() => this.setState({ isOpen: true, photoIndex:8 })} alt='' className='border my-3 rounded clickable' style={{maxHeight: 'inherit', width:'inherit', objectFit:'cover'}}/>
+                        <img src={curved_sidewalk} onClick={() => this.setState({ isOpen: true, photoIndex:2 })} alt='' className='border mb-3 rounded img-preview clickable img-fluid img-thumbnail' style={{height: '300px', width:'inherit', objectFit:'cover'}}/>
+                        <img src={pool} onClick={() => this.setState({ isOpen: true, photoIndex:5 })} alt='' className='border my-3 rounded img-preview clickable img-fluid img-thumbnail' style={{height: '300px', width:'inherit', objectFit:'cover'}}/>
+                        <img src={street} onClick={() => this.setState({ isOpen: true, photoIndex:8 })} alt='' className='border my-3 rounded img-preview clickable img-fluid img-thumbnail' style={{height: '300px', width:'inherit', objectFit:'cover'}}/>
                     </div>
                 </div>
                 {isOpen && (
