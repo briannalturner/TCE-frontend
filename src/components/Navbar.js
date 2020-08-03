@@ -25,6 +25,12 @@ class Navbar extends React.Component {
                                 <li class='nav-item'>
                                     <NavLink to="/photos" activeClassName="active" className="nav-link">Photos</NavLink>
                                 </li>
+                                <li class='nav-item'>
+                                    <NavLink to="/careers" activeClassName="active" className="nav-link">Careers</NavLink>
+                                </li>
+                                <li class='nav-item'>
+                                    <NavLink to="/reviews" activeClassName="active" className="nav-link">Reviews</NavLink>
+                                </li>
                             </ul>
                             <ul class='nav navbar-nav ml-auto'>
                                 <li class='nav-item'>
