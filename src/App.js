@@ -17,8 +17,6 @@ import 'react-image-lightbox/style.css';
 
 class App extends React.Component {
 
-
-
   render() {
     return (
       <div className="App container-fluid">
